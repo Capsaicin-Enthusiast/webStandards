@@ -1,0 +1,63 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    width: 60px;
+    position: absolute;
+    top: 0px;
+    left: 10px; 
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#account {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

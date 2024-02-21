@@ -12,7 +12,7 @@ body, ul {
 
 nav ul {
     list-style-type: none;
-    text-align: center; /* Centering the list horizontally */
+    text-align: center;
 }
 
 nav ul li {
