@@ -73,3 +73,28 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.product-card {
+    width: 90%;
+    margin: 0 auto; /* Center the cards */
+    margin-bottom: 20px; /* Add space between cards */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content ol {
+    padding-left: 20px;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}

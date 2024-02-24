@@ -73,3 +73,24 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.product-card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.card-photo {
+    width: 70%;
+    margin: 0px auto;  
+}
+
+.card-photo img {
+    max-width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
