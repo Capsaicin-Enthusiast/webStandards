@@ -87,3 +87,32 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.card-photo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card-photo img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+}
