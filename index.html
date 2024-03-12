@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Test</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -15,12 +15,12 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="products-services.html">Products/Services</a></li>
                 <li><a href="how-it-works.html">How It Works</a></li>
                 <li><a href="support.html">Support</a></li>
-                <li><a href="blog.html">Blog/News</a></li>
+                <li><a href="https://testtkitchen.blogspot.com/">Blog/News</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="legal.html">Legal</a></li>
                 <li><a href="connect.html">Connect</a></li>
@@ -58,7 +58,7 @@
             <div class="container">
                 <h2>Customer Testimonials</h2>
                 <p>Discover what our satisfied customers have to say about our protein shakes. Real stories, real results. Join the community of fitness enthusiasts who trust our products.</p>
-                <a href="blog.html" class="btn">See More</a>
+                <a href="https://testtkitchen.blogspot.com/" class="btn">See More</a>
             </div>
         </section>
     
@@ -72,7 +72,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Test Website</p>
+        <p>&copy; <span id="currentYear"></span> Test Website</p>
     </footer>
+    
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>

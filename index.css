@@ -32,6 +32,11 @@ nav ul li a {
     color: #333;
 }
 
+nav ul li.active a {
+    color: #007bff;
+    font-weight: bold;
+}
+
 header {
     position: fixed;
     top: 0;
