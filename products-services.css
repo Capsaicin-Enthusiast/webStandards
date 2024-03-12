@@ -95,10 +95,11 @@ footer {
 
 .product-card {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
+    width: calc(33.33% - 40px);
+    margin: 0 20px 20px 0; 
+    display: inline-block; 
+    vertical-align: top; 
+    background-color: #fff; 
 
 .card-photo {
     width: 70%;
