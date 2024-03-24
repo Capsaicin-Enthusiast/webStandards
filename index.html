@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-200 font-sans">
 
     <header class="bg-white">
         <div class="container mx-auto py-4 flex items-center justify-between">
@@ -28,46 +33,50 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header>   
     
-    <main class="container mx-auto py-20">
-        <section id="home" class="bg-gray-100 py-20 text-center">
+    <main class="container mx-auto py-5">
+        <section id="slideshow" class="bg-gray-200">
+            <div class="container mx-auto">
+                <div class="slideshow-container">
+                    <div><img src="img/slides/slide1.png" alt="Slide 1" class="mx-auto h-64"></div>
+                    <div><img src="img/slides/slide2.jpg" alt="Slide 2" class="mx-auto h-64"></div>
+                    <div><img src="img/slides/slide3.avif" alt="Slide 3" class="mx-auto h-64"></div>
+                    <div><img src="img/slides/slide4.jpg" alt="Slide 4" class="mx-auto h-64"></div>
+                    <div><img src="img/slides/slide5.webp" alt="Slide 5" class="mx-auto h-64"></div>
+                </div>
+            </div>
+        </section> 
+
+        <section id="home" class="bg-gray-200 pt-5 py-10 text-center">
             <div class="container">
                 <h1 class="text-4xl font-bold text-gray-1000 mb-8">Fuel Your Fitness Journey with Premium Protein Shakes</h1>
                 <p class="text-lg text-gray-800 mb-8">Welcome to our premium protein shake website! Explore our range of delicious shakes tailored to fuel your workouts, enhance recovery, and support your overall wellness.</p>
-                <a href="shop.html" class="btn hover:bg-gray-800 hover:text-white transition-colors duration-300 ease-in-out">Shop Now</a>
+                <a href="shop.html" class="bg-blue-600 inline-block px-8 py-3 rounded-lg text-white font-semibold hover:bg-blue-800 transition duration-300">Shop Now</a>
             </div>
         </section>
-    
-        <section id="about" class="bg-gray-100 py-20 text-center">
-            <div class="container">
-                <h2 class="text-3xl font-bold text-gray-1000 mb-8">About Us</h2>
-                <p class="text-lg text-gray-800 mb-8">At [Your Company Name], we're passionate about helping you achieve your fitness goals. Our mission is to provide premium-quality protein shakes made with the finest ingredients to fuel your performance and recovery.</p>
-                <a href="about-us.html" class="btn hover:bg-gray-800 hover:text-white transition-colors duration-300 ease-in-out">Learn More</a>
-            </div>
-        </section>
-    
-        <section id="products" class="bg-gray-100 py-20 text-center">
+
+        <section id="products" class="bg-gray-200 py-10 text-center">
             <div class="container">
                 <h2 class="text-3xl font-bold text-gray-1000 mb-8">Our Products</h2>
                 <p class="text-lg text-gray-800 mb-8">Explore our diverse range of protein shakes, carefully crafted to meet your nutritional needs and fitness goals. From whey protein to plant-based blends, we have the perfect shake to support your journey.</p>
-                <a href="products.html" class="btn hover:bg-gray-800 hover:text-white transition-colors duration-300 ease-in-out">Discover Now</a>
+                <a href="products.html" class="bg-green-500 inline-block px-8 py-3 rounded-lg text-white font-semibold hover:bg-green-800 transition duration-300">Discover Now</a>
             </div>
         </section>
     
-        <section id="testimonials" class="bg-gray-100 py-20 text-center">
+        <section id="about" class="bg-gray-200 py-10 text-center">
             <div class="container">
-                <h2 class="text-3xl font-bold text-gray-1000 mb-8">Customer Testimonials</h2>
-                <p class="text-lg text-gray-800 mb-8">Don't just take our word for it. Hear what our satisfied customers have to say about our protein shakes and their fitness journey. Real stories, real results.</p>
-                <a href="https://testtkitchen.blogspot.com/" class="btn hover:bg-gray-800 hover:text-white transition-colors duration-300 ease-in-out">See Testimonials</a>
+                <h2 class="text-3xl font-bold text-gray-1000 mb-8">About Us</h2>
+                <p class="text-lg text-gray-800 mb-8">At Test, we're passionate about helping you achieve your fitness goals. Our mission is to provide premium-quality protein shakes made with the finest ingredients to fuel your performance and recovery.</p>
+                <a href="about-us.html" class="bg-gray-600 inline-block px-8 py-3 rounded-lg text-white font-semibold hover:bg-gray-900 transition duration-300">Learn More</a>
             </div>
         </section>
     
-        <section id="contact" class="bg-gray-100 py-20 text-center">
+        <section id="contact" class="bg-gray-200 py-10 text-center">
             <div class="container">
                 <h2 class="text-3xl font-bold text-gray-1000 mb-8">Contact Us</h2>
                 <p class="text-lg text-gray-800 mb-8">Have questions or need assistance? Our support team is here to help. Reach out to us for personalized assistance on your fitness journey.</p>
-                <a href="support.html" class="btn hover:bg-gray-800 hover:text-white transition-colors duration-300 ease-in-out">Get in Touch</a>
+                <a href="connect.html" class="bg-gray-600 inline-block px-8 py-3 rounded-lg text-white font-semibold hover:bg-gray-900 transition duration-300">Get in Touch</a>
             </div>
         </section>
     </main>    
@@ -75,9 +84,20 @@
     <footer class="bg-gray-900 text-white text-center py-4">
         <p>&copy; <span id="currentYear" class="text-gray-400"></span> Test Website</p>
     </footer>
-    
+
     <script>
         document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+        $(document).ready(function(){
+            $('.slideshow-container').slick({
+                autoplay: true,
+                autoplaySpeed: 5000, 
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev">&#20094;</button>',
+                nextArrow: '<button type="button" class="slick-next">&#20095;</button>',
+                dots: true
+            });
+        });
     </script>
 </body>
 </html>
