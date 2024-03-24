@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test - Account</title>
-    <link rel="stylesheet" href="account.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="logo">
-            </a>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white">
+        <div class="container mx-auto py-4 flex items-center justify-between">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="w-16">
+                </a>
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="index.html" class="px-4 py-2 text-gray-700">Home</a></li>
+                    <li><a href="about-us.html" class="px-4 py-2 text-gray-700">About Us</a></li>
+                    <li><a href="products.html" class="px-4 py-2 text-gray-700">Products</a></li>
+                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-700">How It Works</a></li>
+                    <li><a href="support.html" class="px-4 py-2 text-gray-700">Support</a></li>
+                    <li><a href="shop.html" class="px-4 py-2 text-gray-700">Shop</a></li>
+                    <li><a href="legal.html" class="px-4 py-2 text-gray-700">Legal</a></li>
+                    <li><a href="connect.html" class="px-4 py-2 text-gray-700">Connect</a></li>
+                    <li><a href="account.html" class="px-4 py-2 text-gray-700 font-bold">Account</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="legal.html">Legal</a></li>
-                <li><a href="connect.html">Connect</a></li>
-                <li><a href="account.html" class="active">Account</a></li>
-            </ul>
-        </nav>
     </header>
     
-    <main>
-        <section id="account">
-            <div class="container">
-                <a href="login.html">
-                    <div class="card login-card">
-                        <div class="card-content">
-                            <h2>Login</h2>
-                            <img src="img/login.png" alt="Login Image">
+    <main class="container mx-auto py-5">
+        <section id="account" class="text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="login.html" class="hover:no-underline">
+                    <div class="max-w-md rounded overflow-hidden shadow-lg bg-white">
+                        <div class="px-6 py-4">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Login</h2>
+                            <img src="img/login.png" alt="Login Image" class="mx-auto mb-4">
                         </div>
                     </div>
                 </a>
-                <a href="register.html">
-                    <div class="card register-card">
-                        <div class="card-content">
-                            <h2>Register</h2>
-                            <img src="img/register.png" alt="Register Image">
+                <a href="register.html" class="hover:no-underline">
+                    <div class="max-w-md rounded overflow-hidden shadow-lg bg-white">
+                        <div class="px-6 py-4">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Register</h2>
+                            <img src="img/register.png" alt="Register Image" class="mx-auto mb-4">
                         </div>
                     </div>
                 </a>
