@@ -4,48 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - My Website</title>
-    <link rel="stylesheet" href="support.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="logo">
-            </a>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white">
+        <div class="container mx-auto py-4 flex items-center justify-between">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="w-16">
+                </a>
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="index.html" class="px-4 py-2 text-gray-700">Home</a></li>
+                    <li><a href="about-us.html" class="px-4 py-2 text-gray-700">About Us</a></li>
+                    <li><a href="products.html" class="px-4 py-2 text-gray-700">Products</a></li>
+                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-700">How It Works</a></li>
+                    <li><a href="support.html" class="px-4 py-2 text-gray-700 font-bold">Support</a></li> 
+                    <li><a href="shop.html" class="px-4 py-2 text-gray-700">Shop</a></li>
+                    <li><a href="legal.html" class="px-4 py-2 text-gray-700">Legal</a></li>
+                    <li><a href="connect.html" class="px-4 py-2 text-gray-700">Connect</a></li>
+                    <li><a href="account.html" class="px-4 py-2 text-gray-700">Account</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="support.html" class="active">Support</a></li>
-                <li><a href="https://testtkitchen.blogspot.com/" target="_blank">Blog</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="legal.html">Legal</a></li>
-                <li><a href="connect.html">Connect</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <section id="support">
+    <main class="container mx-auto py-20">
+        <section id="support" class="bg-gray-100 py-20 text-center">
             <div class="container">
-                <h1>Support</h1>
-                <div class="info">
-                  <p>If you need any assistance or have any questions, please feel free to contact us:</p>
-                  <ul>
-                    <li>Email: 07108009@dwc-legazpi.edu</li>
-                    <li>Phone: +63 9096723423</li>
-                    <li>Address: Daraga,Albay</li>
-                  </ul>
+                <h1 class="text-4xl font-bold text-gray-700 mb-8">Support</h1>
+                <div class="info text-lg text-gray-600 mb-8">
+                    <p>If you need any assistance or have any questions, please feel free to contact us:</p>
+                    <ul class="mt-4">
+                        <li>Email: 07108009@dwc-legazpi.edu</li>
+                        <li>Phone: +63 9096723423</li>
+                        <li>Address: Daraga, Albay</li>
+                    </ul>
                 </div>
-              </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-gray-900 text-white text-center py-4">
         <p>&copy; 2023 Test Website</p>
     </footer>
 </body>
