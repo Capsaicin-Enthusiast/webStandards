@@ -3,55 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal - My Website</title>
+    <title>How It Works - My Website</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 font-sans">
 
-    <header class="bg-white">
-        <div class="container mx-auto py-4 flex items-center justify-between">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.png" alt="logo" class="w-16">
-                </a>
-            </div>
-            <nav>
-                <ul class="flex">
-                    <li><a href="index.html" class="px-4 py-2 text-gray-700">Home</a></li>
-                    <li><a href="about-us.html" class="px-4 py-2 text-gray-700">About Us</a></li>
-                    <li><a href="products.html" class="px-4 py-2 text-gray-700">Products</a></li>
-                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-700">How It Works</a></li>
-                    <li><a href="support.html" class="px-4 py-2 text-gray-700">Support</a></li>
-                    <li><a href="https://testtkitchen.blogspot.com/" target="_blank" class="px-4 py-2 text-gray-700">Blog</a></li>
-                    <li><a href="shop.html" class="px-4 py-2 text-gray-700">Shop</a></li>
-                    <li><a href="legal.html" class="px-4 py-2 text-gray-700 font-bold">Legal</a></li>
-                    <li><a href="connect.html" class="px-4 py-2 text-gray-700">Connect</a></li>
-                    <li><a href="account.html" class="px-4 py-2 text-gray-700">Account</a></li>
-                </ul>
-            </nav>
+<header class="bg-white">
+    <div class="container mx-auto py-4 flex items-center justify-between">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo" class="w-16">
+            </a>
         </div>
-    </header>
-    
-    <main class="container mx-auto py-20">
-        <section id="legal" class="bg-gray-100 py-20 text-center">
-            <div class="container">
-                <h1 class="text-4xl font-bold text-gray-800 mb-8">Legal</h1>
-                <p class="text-lg text-gray-600 mb-8">Read our terms of service and privacy policy:</p>
-                <ul class="text-lg text-gray-600 mb-8">
-                    <li><a href="#" class="text-blue-500 hover:underline">Terms of Service</a></li>
-                    <li><a href="#" class="text-blue-500 hover:underline">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        <nav>
+            <ul class="flex">
+                <li><a href="index.html" class="px-4 py-2 text-gray-700 font-bold">Home</a></li>
+                <li><a href="about-us.html" class="px-4 py-2 text-gray-700">About Us</a></li>
+                <li><a href="products.html" class="px-4 py-2 text-gray-700">Products</a></li>
+                <li><a href="how-it-works.html" class="px-4 py-2 text-gray-700">How It Works</a></li>
+                <li><a href="support.html" class="px-4 py-2 text-gray-700">Support</a></li>
+                <li><a href="https://testtkitchen.blogspot.com/" target="_blank" class="px-4 py-2 text-gray-700">Blog</a></li>
+                <li><a href="shop.html" class="px-4 py-2 text-gray-700">Shop</a></li>
+                <li><a href="legal.html" class="px-4 py-2 text-gray-700">Legal</a></li>
+                <li><a href="connect.html" class="px-4 py-2 text-gray-700">Connect</a></li>
+                <li><a href="account.html" class="px-4 py-2 text-gray-700">Account</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    <footer class="bg-gray-900 text-white text-center py-4">
-        <p>&copy; <span id="currentYear" class="text-gray-400"></span> Test Website</p>
-    </footer>
-    
-    <script>
-        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-    </script>
+<main class="container mx-auto py-20">
+    <section id="how-it-works" class="bg-gray-300 py-20 text-center">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-gray-700 mb-8">How to Use Our Products</h1>
+            <p class="text-lg text-gray-600 mb-8">Here's a step-by-step guide on how to make the most of our premium supplements:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="max-w-md rounded overflow-hidden shadow-lg bg-white">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Whey Protein Powder</div>
+                        <ol class="list-decimal pl-4">
+                            <li>Mix one scoop of whey protein powder with 8-12 ounces of water or milk in a shaker bottle.</li>
+                            <li>Shake well until the powder is completely dissolved.</li>
+                            <li>Consume immediately after your workout for optimal muscle recovery, or as a convenient snack throughout the day.</li>
+                            <li>For best results, use whey protein powder as part of a balanced diet and exercise routine.</li>
+                        </ol>
+                        <p class="mt-4"><strong class="text-gray-700">Disclaimer:</strong> Consult your healthcare professional before using if you have any medical conditions or are pregnant or nursing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gray-900 text-white text-center py-4">
+    <p>&copy; <span id="currentYear" class="text-gray-400"></span> Test Website</p>
+</footer>
+
+<script>
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>
-    
