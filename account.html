@@ -51,8 +51,12 @@
         </section>
     </main>    
 
-    <footer>
-        <p>&copy; 2023 Test Website</p>
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>&copy; <span id="currentYear" class="text-gray-400"></span> Test Website</p>
     </footer>
+    
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
