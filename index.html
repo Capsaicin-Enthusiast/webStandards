@@ -4,75 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
+<body class="bg-gray-300 font-sans">
+
+    <header class="bg-white">
+        <div class="container mx-auto py-4 flex items-center justify-between">
             <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo.png" alt="logo">
+                    <img src="img/logo.png" alt="logo" class="w-16">
                 </a>
-            </div>  
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="https://testtkitchen.blogspot.com/" target="_blank">Blog</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="legal.html">Legal</a></li>
-                <li><a href="connect.html">Connect</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
-        </nav>
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="index.html" class="px-4 py-2 text-gray-700 font-bold">Home</a></li>
+                    <li><a href="about-us.html" class="px-4 py-2 text-gray-700">About Us</a></li>
+                    <li><a href="products.html" class="px-4 py-2 text-gray-700">Products</a></li>
+                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-700">How It Works</a></li>
+                    <li><a href="support.html" class="px-4 py-2 text-gray-700">Support</a></li>
+                    <li><a href="https://testtkitchen.blogspot.com/" target="_blank" class="px-4 py-2 text-gray-700">Blog</a></li>
+                    <li><a href="shop.html" class="px-4 py-2 text-gray-700">Shop</a></li>
+                    <li><a href="legal.html" class="px-4 py-2 text-gray-700">Legal</a></li>
+                    <li><a href="connect.html" class="px-4 py-2 text-gray-700">Connect</a></li>
+                    <li><a href="account.html" class="px-4 py-2 text-gray-700">Account</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <main>
-        <section id="home">
+    <main class="container mx-auto py-20">
+        <section id="home" class="bg-gray-300 py-20 text-center">
             <div class="container">
-                <h1>Best Protein Shakes for Your Fitness Goals</h1>
-                <p>Welcome to our premium protein shake website! Explore our range of delicious shakes tailored to fuel your workouts and enhance your fitness journey.</p>
+                <h1 class="text-4xl font-bold text-gray-700 mb-8">Best Protein Shakes for Your Fitness Goals</h1>
+                <p class="text-lg text-gray-600 mb-8">Welcome to our premium protein shake website! Explore our range of delicious shakes tailored to fuel your workouts and enhance your fitness journey.</p>
                 <a href="shop.html" class="btn">Shop Now</a>
             </div>
         </section>
     
-        <section id="about">
+        <section id="about" class="bg-gray-300 py-20 text-center">
             <div class="container">
-                <h2>About Us</h2>
-                <p>Learn about our mission, commitment to quality, and the ingredients that make our protein shakes stand out. Discover why fitness enthusiasts trust us for their nutritional needs.</p>
+                <h2 class="text-3xl font-bold text-gray-700 mb-8">About Us</h2>
+                <p class="text-lg text-gray-600 mb-8">Learn about our mission, commitment to quality, and the ingredients that make our protein shakes stand out. Discover why fitness enthusiasts trust us for their nutritional needs.</p>
                 <a href="about-us.html" class="btn">Read More</a>
             </div>
         </section>
     
-        <section id="products">
+        <section id="products" class="bg-gray-300 py-20 text-center">
             <div class="container">
-                <h2>Our Products</h2>
-                <p>Explore our diverse range of protein shakes, from whey protein to plant-based blends. Find the perfect shake to support your muscle growth, recovery, and overall wellness.</p>
+                <h2 class="text-3xl font-bold text-gray-700 mb-8">Our Products</h2>
+                <p class="text-lg text-gray-600 mb-8">Explore our diverse range of protein shakes, from whey protein to plant-based blends. Find the perfect shake to support your muscle growth, recovery, and overall wellness.</p>
                 <a href="products.html" class="btn">View Products</a>
             </div>
         </section>
     
-        <section id="testimonials">
+        <section id="testimonials" class="bg-gray-300 py-20 text-center">
             <div class="container">
-                <h2>Customer Testimonials</h2>
-                <p>Discover what our satisfied customers have to say about our protein shakes. Real stories, real results. Join the community of fitness enthusiasts who trust our products.</p>
+                <h2 class="text-3xl font-bold text-gray-700 mb-8">Customer Testimonials</h2>
+                <p class="text-lg text-gray-600 mb-8">Discover what our satisfied customers have to say about our protein shakes. Real stories, real results. Join the community of fitness enthusiasts who trust our products.</p>
                 <a href="https://testtkitchen.blogspot.com/" class="btn">See More</a>
             </div>
         </section>
     
-        <section id="contact">
+        <section id="contact" class="bg-gray-300 py-20 text-center">
             <div class="container">
-                <h2>Contact Us</h2>
-                <p>Have questions or need assistance? Contact our support team for personalized assistance. We're here to help you on your fitness journey.</p>
+                <h2 class="text-3xl font-bold text-gray-700 mb-8">Contact Us</h2>
+                <p class="text-lg text-gray-600 mb-8">Have questions or need assistance? Contact our support team for personalized assistance. We're here to help you on your fitness journey.</p>
                 <a href="support.html" class="btn">Get in Touch</a>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Test Website</p>
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>&copy; <span id="currentYear" class="text-gray-400"></span> Test Website</p>
     </footer>
     
     <script>

@@ -4,88 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - My Website</title>
-    <link rel="stylesheet" href="about-us.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="logo">
-            </a>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white">
+        <div class="container mx-auto py-4 flex items-center justify-between">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="w-16">
+                </a>
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="index.html" class="px-4 py-2 text-gray-700">Home</a></li>
+                    <li><a href="about-us.html" class="px-4 py-2 text-gray-700 font-bold">About Us</a></li>
+                    <li><a href="products.html" class="px-4 py-2 text-gray-700">Products</a></li>
+                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-700">How It Works</a></li>
+                    <li><a href="support.html" class="px-4 py-2 text-gray-700">Support</a></li>
+                    <li><a href="https://testtkitchen.blogspot.com/" target="_blank" class="px-4 py-2 text-gray-700">Blog</a></li>
+                    <li><a href="shop.html" class="px-4 py-2 text-gray-700">Shop</a></li>
+                    <li><a href="legal.html" class="px-4 py-2 text-gray-700">Legal</a></li>
+                    <li><a href="connect.html" class="px-4 py-2 text-gray-700">Connect</a></li>
+                    <li><a href="account.html" class="px-4 py-2 text-gray-700">Account</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html" class="active">About Us</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="https://testtkitchen.blogspot.com/" target="_blank">Blog</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="legal.html">Legal</a></li>
-                <li><a href="connect.html">Connect</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
-        </nav>
     </header>
     
-    <main>
-        <section id="about">
-            <h1>Meet the Team</h1>
-            <p>Hey there! we are TEST. </p>
-            <p>Our mission is to exceed industry standards by consistently providing top-quality products for your fitness journey.</p>
-            <div class="container">
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="img/photo.jpg" alt="CEO Photo">
-                    </div>
-                    <div class="card-content">
-                        <h2>Lou</h2>
-                        <h3>Chief Executive Officer</h3>
+    <main class="container mx-auto py-12">
+        <section id="about" class="px-4">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Meet the Team</h1>
+            <p class="text-lg text-gray-600 mb-8">Hey there! we are TEST.</p>
+            <p class="text-lg text-gray-600 mb-8">Our mission is to exceed industry standards by consistently providing top-quality products for your fitness journey.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/photo.jpg" alt="CEO Photo">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Louis</div>
+                        <p class="text-gray-700 text-base">Chief Executive Officer</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="img/photo.jpg" alt="CTO Photo">
-                    </div>
-                    <div class="card-content">
-                        <h2>Jasper</h2>
-                        <h3>Chief Technology Officer</h3>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/photo.jpg" alt="CEO Photo">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Jasper</div>
+                        <p class="text-gray-700 text-base">Chief Technology Officer</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="img/photo.jpg" alt="Operations Manager Photo">
-                    </div>
-                    <div class="card-content">
-                        <h2>Abril</h2>
-                        <h3>Operations Manager</h3>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/photo.jpg" alt="CEO Photo">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Cañon</div>
+                        <p class="text-gray-700 text-base">Marketing Director</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="img/photo.jpg" alt="Marketing Director Photo">
-                    </div>
-                    <div class="card-content">
-                        <h2>Canon</h2>
-                        <h3>Marketing Director</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-photo">
-                        <img src="img/photo.jpg" alt="Customer Relations Manager Photo">
-                    </div>
-                    <div class="card-content">
-                        <h2>Louis</h2>
-                        <h3>Customer Relations Manager</h3>
-                    </div>
-                </div>
-                <p>Together, we envision a future where every scoop of our protein powder fuels not just physical strength, but also dreams and aspirations. Our team is dedicated to crafting the finest protein powder in the industry, not just for today, but for generations to come.</p>
             </div>
+            <p class="text-lg text-gray-600 mt-8">Together, we envision a future where every scoop of our protein powder fuels not just physical strength, but also dreams and aspirations. Our team is dedicated to crafting the finest protein powder in the industry, not just for today, but for generations to come.</p>
         </section>
     </main>
 
-    <footer>
+    <footer class="bg-gray-900 text-white text-center py-4">
         <p>&copy; 2023 Test Website</p>
     </footer>
 </body>

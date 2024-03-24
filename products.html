@@ -4,98 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products/Services - My Website</title>
-    <link rel="stylesheet" href="products.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="logo">
-            </a>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white">
+        <div class="container mx-auto py-4 flex items-center justify-between">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="w-16">
+                </a>
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="index.html" class="px-4 py-2 text-gray-700">Home</a></li>
+                    <li><a href="about-us.html" class="px-4 py-2 text-gray-700">About Us</a></li>
+                    <li><a href="products.html" class="px-4 py-2 text-gray-700 font-bold">Products</a></li>
+                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-700">How It Works</a></li>
+                    <li><a href="support.html" class="px-4 py-2 text-gray-700">Support</a></li>
+                    <li><a href="https://testtkitchen.blogspot.com/" target="_blank" class="px-4 py-2 text-gray-700">Blog</a></li>
+                    <li><a href="shop.html" class="px-4 py-2 text-gray-700">Shop</a></li>
+                    <li><a href="legal.html" class="px-4 py-2 text-gray-700">Legal</a></li>
+                    <li><a href="connect.html" class="px-4 py-2 text-gray-700">Connect</a></li>
+                    <li><a href="account.html" class="px-4 py-2 text-gray-700">Account</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
-                <li><a href="how-it-works.html">How It Works</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="https://testtkitchen.blogspot.com/" target="_blank">Blog</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="legal.html">Legal</a></li>
-                <li><a href="connect.html">Connect</a></li>
-                <li><a href="account.html">Account</a></li>
-            </ul>
-        </nav>
     </header>
     
-    <main>
-        <section id="products">
-            <div class="container">
-                <h1>Our Products & Services</h1>
-                <p>Discover our range of premium products to support your fitness journey.</p>
-                <div class="product-card">
-                    <div class="card-photo">
-                        <img src="img/protein.webp" alt="Whey Protein Powder">
-                    </div>
-                    <div class="card-content">
-                        <h2>Protein Powder</h2>
-                        <p>Our whey protein powder is formulated to fuel your muscles and aid in recovery after intense workouts. Made with high-quality whey protein isolate, it provides essential amino acids for muscle growth and repair.</p>
+    <main class="container mx-auto py-12">
+        <section id="products" class="px-4">
+            <h1 class="text-4xl font-bold text-gray-800 mb-8 text-center">Our Products & Services</h1>
+            <p class="text-lg text-gray-600 mb-8 text-center">Discover our range of premium products to support your fitness journey.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/protein.webp" alt="Whey Protein Powder">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Protein Powder</div>
+                        <p class="text-gray-700 text-base">Our whey protein powder is formulated to fuel your muscles and aid in recovery after intense workouts. Made with high-quality whey protein isolate, it provides essential amino acids for muscle growth and repair.</p>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="card-photo">
-                        <img src="img/creatine.avif" alt="Creatine Monohydrate">
-                    </div>
-                    <div class="card-content">
-                        <h2>Creatine</h2>
-                        <p>Boost your strength and power with our creatine monohydrate supplement. Scientifically proven to enhance performance, creatine helps increase muscle mass and improve athletic performance during high-intensity exercises.</p>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/creatine.avif" alt="Creatine">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Creatine</div>
+                        <p class="text-gray-700 text-base">Boost your strength and power with our creatine monohydrate supplement. Scientifically proven to enhance performance, creatine helps increase muscle mass and improve athletic performance during high-intensity exercises.</p>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="card-photo">
-                        <img src="img/vitamins.jpg" alt="Vitamins and Minerals">
-                    </div>
-                    <div class="card-content">
-                        <h2>Vitamins and Minerals</h2>
-                        <p>Support your overall health and well-being with our vitamins and minerals. Packed with essential vitamins and minerals, they help fill nutritional gaps in your diet, promote immune function, and enhance energy levels.</p>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/vitamins.jpg" alt="Vitamins">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Vitamins and Minerals</div>
+                        <p class="text-gray-700 text-base">Support your overall health and well-being with our vitamins and minerals. Packed with essential vitamins and minerals, they help fill nutritional gaps in your diet, promote immune function, and enhance energy levels.</p>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="card-photo">
-                        <img src="img/BCAA.jpg" alt="BCAA's">
-                    </div>
-                    <div class="card-content">
-                        <h2>BCAA's</h2>
-                        <p>Maximize your fitness results with our premium Branched-Chain Amino Acids (BCAAs) supplement. Formulated to support muscle recovery and growth, our BCAAs provide essential amino acids Leucine, Isoleucine, and Valine in optimal ratios to fuel your workouts and accelerate recovery.</p>
-                        <p></p>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/BCAA.jpg" alt="BCAA">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">BCAA's</div>
+                        <p class="text-gray-700 text-base">Maximize your fitness results with our premium Branched-Chain Amino Acids (BCAAs) supplement. Formulated to support muscle recovery and growth, our BCAAs provide essential amino acids Leucine, Isoleucine, and Valine in optimal ratios to fuel your workouts and accelerate recovery.</p>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="card-photo">
-                        <img src="img/preworkout.png" alt="Pre-workout">
-                    </div>
-                    <div class="card-content">
-                        <h2>Pre-workout</h2>
-                        <p>Get ready to crush your fitness goals with our high-performance Pre-Workout supplement. Designed to boost energy, focus, and endurance, our pre-workout formula delivers a potent blend of ingredients including caffeine, beta-alanine, and creatine to optimize your workout intensity and performance.</p>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/preworkout.png" alt="Preworkout">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">Pre-workout</div>
+                        <p class="text-gray-700 text-base">Get ready to crush your fitness goals with our high-performance Pre-Workout supplement. Designed to boost energy, focus, and endurance, our pre-workout formula delivers a potent blend of ingredients including caffeine, beta-alanine, and creatine to optimize your workout intensity and performance.</p>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="card-photo">
-                        <img src="img/others.avif" alt="Supplements">
-                    </div>
-                    <div class="card-content">
-                        <h2>...and so much more!</h2>
-                        <button class="btn-shop" onclick="location.href='shop.html'">Shop Now <i class="fas fa-arrow-right"></i></button>
+                <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                    <img class="w-full" src="img/others.avif" alt="Others">
+                    <div class="px-6 py-4">
+                        <button onclick="location.href='shop.html'" class="btn-shop flex items-center justify-center w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                            Shop Now <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
     </main>    
 
-    <footer>
-        <p>&copy; 2023 Test Website</p>
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>&copy; <span id="currentYear" class="text-gray-400"></span> Test Website</p>
     </footer>
+    
+    <script>
+        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+    </script>
 </body>
 </html>
