@@ -14,6 +14,10 @@
 <body class="bg-gray-200 font-sans">
 
     <header class="bg-white">
+<?php
+include 'nav.php';
+?>
+
         <div class="container mx-auto py-4 flex items-center justify-between">
             <div class="logo">
                 <a href="index.html">
