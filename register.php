@@ -1,3 +1,7 @@
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +47,7 @@
                 <button class="btn btn-primary px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg" name="submit" type="submit">Register</button>
             </div>
             <div class="text-center mt-3">
-                <a href="login.html" class="text-blue-500 hover:underline">Already have an account? Sign in here</a>
+                <a href="login.php" class="text-blue-500 hover:underline">Already have an account? Sign in here</a>
             </div>
         </form>
     </div>

@@ -1,3 +1,7 @@
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,43 +18,26 @@
 <body class="bg-gray-200 font-sans">
 
     <header class="bg-white">
-<?php
-include 'nav.php';
-?>
-
-        <div class="container mx-auto py-4 flex items-center justify-between">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo1.png" alt="logo" class="w-16">
-                </a>
-            </div>
-            <nav>
-                <ul class="flex">
-                    <li><a href="index.html" class="px-4 py-2 text-gray-1000 font-bold">Home</a></li>
-                    <li><a href="about-us.html" class="px-4 py-2 text-gray-1000">About Us</a></li>
-                    <li><a href="products.html" class="px-4 py-2 text-gray-1000">Products</a></li>
-                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-1000">How It Works</a></li>
-                    <li><a href="shop.html" class="px-4 py-2 text-gray-1000">Shop</a></li>
-                    <li><a href="legal.html" class="px-4 py-2 text-gray-1000">Legal</a></li>
-                    <li><a href="connect.html" class="px-4 py-2 text-gray-1000">Connect</a></li>
-                    <li><a href="account.html" class="px-4 py-2 text-gray-1000">Account</a></li>
-                </ul>
-            </nav>
-        </div>
+    <?php
+    include 'nav.php';
+    ?>
     </header>   
     
     <main class="container mx-auto py-5">
         <section id="slideshow" class="bg-gray-200">
             <div class="container mx-auto">
-                <div class="slideshow-container">
-                    <div><img src="img/slides/slide1.png" alt="Slide 1" class="mx-auto h-64"></div>
-                    <div><img src="img/slides/slide2.jpg" alt="Slide 2" class="mx-auto h-64"></div>
-                    <div><img src="img/slides/slide3.avif" alt="Slide 3" class="mx-auto h-64"></div>
-                    <div><img src="img/slides/slide4.jpg" alt="Slide 4" class="mx-auto h-64"></div>
-                    <div><img src="img/slides/slide5.webp" alt="Slide 5" class="mx-auto h-64"></div>
+                <div class="relative overflow-hidden w-full">
+                <div class="flex transition-transform duration-500 ease-in-out" id="slides">
+                    <div class="flex-none w-full"><img src="img/slides/slide1.png" alt="Slide 1" class="w-full h-60 object-cover"></div>
+                    <div class="flex-none w-full"><img src="img/slides/slide2.jpg" alt="Slide 2" class="w-full h-60 object-cover"></div>
+                    <div class="flex-none w-full"><img src="img/slides/slide3.jpg" alt="Slide 3" class="w-full h-60 object-cover"></div>
+                    <div class="flex-none w-full"><img src="img/slides/slide4.jpg" alt="Slide 4" class="w-full h-60 object-cover"></div>
+                    <div class="flex-none w-full"><img src="img/slides/slide5.jpg" alt="Slide 5" class="w-full h-60 object-cover"></div>
+                </div>
                 </div>
             </div>
-        </section> 
+        </section>
+
 
         <section id="home" class="bg-gray-200 pt-5 py-10 text-center">
             <div class="container">
@@ -90,31 +77,33 @@ include 'nav.php';
     </footer>
 
     <script>
-        document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+        document.addEventListener('DOMContentLoaded', function () {
+            const slidesContainer = document.getElementById('slides');
+            const slides = slidesContainer.children;
+            const totalSlides = slides.length;
+            let currentIndex = 0;
 
-        $(document).ready(function(){
-            $('.slideshow-container').slick({
-                autoplay: true,
-                autoplaySpeed: 5000, 
-                arrows: true,
-                prevArrow: '<button type="button" class="slick-prev">&#20094;</button>',
-                nextArrow: '<button type="button" class="slick-next">&#20095;</button>',
-                dots: true
-            });
+            function showNextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            setInterval(showNextSlide, 3000);
         });
     </script>
+
     
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/660b5de6a0c6737bd1273483/1hqe6djvl';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-</script>
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/660b5de6a0c6737bd1273483/1hqe6djvl';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
 
 </body>
 </html>

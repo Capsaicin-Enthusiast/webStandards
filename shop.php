@@ -1,3 +1,7 @@
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,34 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test - Shop</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .hidden {
-            display: none;
-        }        
-    </style>
+
 </head>
 <body class="bg-gray-100 font-sans">
 
     <header class="bg-white">
-        <div class="container mx-auto py-4 flex items-center justify-between">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo1.png" alt="logo" class="w-16">
-                </a>
-            </div>
-            <nav>
-                <ul class="flex">
-                    <li><a href="index.html" class="px-4 py-2 text-gray-1000">Home</a></li>
-                    <li><a href="about-us.html" class="px-4 py-2 text-gray-1000">About Us</a></li>
-                    <li><a href="products.html" class="px-4 py-2 text-gray-1000">Products</a></li>
-                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-1000">How It Works</a></li>
-                    <li><a href="shop.html" class="px-4 py-2 text-gray-1000 font-bold">Shop</a></li>
-                    <li><a href="legal.html" class="px-4 py-2 text-gray-1000">Legal</a></li>
-                    <li><a href="connect.html" class="px-4 py-2 text-gray-1000">Connect</a></li>
-                    <li><a href="account.html" class="px-4 py-2 text-gray-1000">Account</a></li>
-                </ul>
-            </nav>
-        </div>
+    <?php
+    include 'nav.php';
+    ?>
     </header>
     
     <main class="container mx-auto py-12">

@@ -1,3 +1,7 @@
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,25 +13,9 @@
 <body class="bg-gray-100 font-sans">
 
     <header class="bg-white">
-        <div class="container mx-auto py-4 flex items-center justify-between">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo1.png" alt="logo" class="w-16">
-                </a>
-            </div>
-            <nav>
-                <ul class="flex">
-                    <li><a href="index.html" class="px-4 py-2 text-gray-1000">Home</a></li>
-                    <li><a href="about-us.html" class="px-4 py-2 text-gray-1000">About Us</a></li>
-                    <li><a href="products.html" class="px-4 py-2 text-gray-1000 font-bold">Products</a></li>
-                    <li><a href="how-it-works.html" class="px-4 py-2 text-gray-1000">How It Works</a></li>
-                    <li><a href="shop.html" class="px-4 py-2 text-gray-1000">Shop</a></li>
-                    <li><a href="legal.html" class="px-4 py-2 text-gray-1000">Legal</a></li>
-                    <li><a href="connect.html" class="px-4 py-2 text-gray-1000">Connect</a></li>
-                    <li><a href="account.html" class="px-4 py-2 text-gray-1000">Account</a></li>
-                </ul>
-            </nav>
-        </div>
+    <?php
+    include 'nav.php';
+    ?>
     </header>
     
     <main class="container mx-auto py-12">
@@ -73,7 +61,7 @@
                 <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
                     <img class="w-full" src="img/others.avif" alt="A myriad of containers of different supplements.">
                     <div class="px-6 py-4">
-                        <button onclick="location.href='shop.html'" class="btn-shop flex items-center justify-center w-full bg-blue-500 hover:bg-blue-1000 text-white font-bold py-2 px-4 rounded">
+                        <button onclick="location.href='shop.php'" class="btn-shop flex items-center justify-center w-full bg-blue-500 hover:bg-blue-1000 text-white font-bold py-2 px-4 rounded">
                             Shop Now <i class="fas fa-arrow-right ml-2"></i>
                         </button>
                     </div>
